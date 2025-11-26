@@ -88,20 +88,20 @@
         The App does <strong>not</strong> send your meter readings or personal data to our servers.
     </li>
     <li>
-        <strong>Camera (if enabled)</strong><br />
-        Used only when you explicitly choose camera-related features
-        (for example, capturing meter readings using the camera / OCR).
-        Images are processed locally on your device and are not automatically uploaded to any server by us.
-    </li>
-    <li>
-        <strong>Storage / Photos &amp; media (via system file picker)</strong><br />
-        Used when:
+        <strong>Storage (READ / WRITE to device storage)</strong><br />
+        This permission is used <strong>only for the optional backup &amp; restore feature</strong>:
         <ul>
-            <li>You create a local backup of your data to device storage.</li>
-            <li>You restore data from a backup file that <strong>you</strong> select.</li>
+            <li>To create a local backup file of your data on your device storage.</li>
+            <li>To restore your data from a backup file that <strong>you</strong> select.</li>
         </ul>
-        Access is typically granted through the Android system picker (SAF). The App only reads or writes the
-        specific file you choose and does not scan or access other files on your device.
+        On newer Android versions, backups may be stored in an app-specific directory that does not require
+        broad storage access; on older versions the App may use a folder on your device storage.
+        The App only reads or writes backup files it creates or that you explicitly choose, and does not
+        scan or access other files on your device.
+        <br /><br />
+        <strong>This permission is optional:</strong> if you do not grant storage access, the core app
+        features (meter readings, statistics, bill calculations) will still work, but the backup/restore
+        feature will not be available.
     </li>
 </ul>
 
